@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>We Care For Eyes</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+  	margin: 0;
+  	padding: 0;
+  	border: 0;
+  	font-size: 100%;
+  	font: inherit;
+  	vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section {
+  	display: block;
+  }
+  body {
+  	line-height: 1;
+  }
+  ol, ul {
+  	list-style: none;
+  }
+  blockquote, q {
+  	quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+  	content: '';
+  	content: none;
+  }
+  table {
+  	border-collapse: collapse;
+  	border-spacing: 0;
+  }
+.website {
+  width: 1183px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.title {
+  text-align: left;
+  float: left;
+  color: white;
+  padding: 0px 10px;
+  text-decoration: none;
+}
+div.background {
+  background: url(https://papers.co/desktop/wp-content/uploads/papers.co-mu53-tree-wood-mountain-nature-dark-green-29-wallpaper.jpg);
+  top: 50;
+  bottom: 50;
+  overflow: auto;
+}
+.home {
+  text-align: center;
+  float: center;
+  color: white;
+  padding: 10px;
+}
+.about {
+  text-align: center;
+  color: white;
+}
+.reviewBoxLeft {
+  height: 200;
+  width: 200;
+  float: left;
+}
+.reviewText {
+  color: white;
+  font-size: 12.5px;
+  text-align: left;
+}
+.container {
+  padding: 10px;
+  width: 275px;
+  height: 275px;
+  color: white;
+  background: rgba(254, 254,254, 0.2);
+  margin-left: 20px;
+  margin-right: 150px;
+  float: left;
+}
+.reviewPicture {
+  text-align: left;
+  padding: 10px, 0px, 0px, 0px;
+  float: left;
+  width: 280px;
+  margin-bottom: 10px;
+
+}
+.containerRight {
+  padding: 10px;
+  width: 275px;
+  height: 275px;
+  color: white;
+  background: rgba(254, 254,254, 0.2);
+  margin-left: 150px;
+  float: left;
+}
+
+.containerMiddle {
+  padding: 10px;
+  width: 275px;
+  height: 275px;
+  color: white;
+  background: rgba(254, 254,254, 0.2);
+  margin-left: 20px;
+  float: left;
+  margin-bottom: 75px;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 100px;
+}
+.column-2 {
+  float: left;
+  width: 12%;
+  margin-left: 100px;
+  filter: invert(1);
+  margin-right: 50px;
+}
+.exam-resize {
+  width: 75px;
+}
+.eye-resize {
+  width: 115px;
+}
+.dropper-resize {
+  width: 115px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: flex;
+  flex-direction: row;
+}
+div.background-services {
+  top: 50;
+  bottom: 50;
+  overflow: auto;
+  color:white;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9) ), url('http://www.clearchoice4eyecare.com/files/2016/02/concourse_optometry_background_Final2-1200x430.jpg');
+}
+.service-container {
+  width: 100%;
+}
+.service-text {
+  display: flex;
+  flex-direction: row;
+  margin-left: 152px;
+  font-size: 10px;
+}
+.service-text2 {
+  margin-left: 220px;
+  font-size: 10px;
+}
+.service-text3 {
+  margin-left: 202px;
+  font-size: 10px;
+}
+.service-text4 {
+  margin-left: 250px;
+  font-size: 10px;
+}
+.service-text-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 17px;
+  justify-content: center;
+  align-items: center;
+}
+.service-list-element {
+  margin-left: 10px;
+}
+.location-text-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+}
+.map-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+.map1{
+  margin-left: 150px;
+  margin-right: 25px;
+}
+.map2 {
+  margin-right: 20px;
+  margin-left: 25px;
+}
+.contact-us-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-bottom: 50px;
+  color: white;
+}
+.queens-container {
+  flex-direction: column;
+  margin-right: 400px;
+  margin-left: 150px
+}
+.long-island-container {
+  flex-direction: column;
+  margin-left: 25px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 55px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  margin-left: 550px;
+  border-radius: 50%;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.social-media-container {
+  align-items: center;
+}
+.hours-container1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-left: 165px;
+}
+.hours-container2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-left: 140px;
+}
+.office-hour-container {
+  display: flex;
+  flex-direction: row;
+}
+.profile-picture-container {
+  height: 25px;
+  width: 35px;
+}
+img {
+  border-radius: 8px;
+}
+p {
+  font-color: black;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="website">
+<!--hompage banner-->
+  <div class="topnav">
+    <div class="title">
+      <h1 style="font-size:20px">We Care For Eyes <img src=https://files.gamebanana.com/img/ico/sprays/linkinpark.png
+        width=24></h1>
+
+    <!--Homepage Links-->
+    </div>
+    <a href="#contact">Contact</a>
+    <a href="#locations">Locations</a>
+    <a href="#services">Our Services</a>
+    <a href="#aboutus">About Us</a>
+    <a href="#home">Home</a>
+  </div>
+<div class="background">
+  <div class="home" id="home">
+  <h1>Eye Care Service in Queens and Long Island</h1>
+    <h2 style="font-size:20px">Caring For Eyes Since 1958</h2>
+  </div>
+<!--This is the left-most review on the homepage-->
+  <div class="container">
+  <div class="reviewPicture">
+    <!--Review image-->
+    <p style="margin-right:20px"><img src="https://www.whatsappprofiledpimages.com/wp-content/uploads/2018/07/facebook-profile-pic99.jpg"
+    width=48 top=10>     Zambia K.</p>
+  </div>
+  <div class="reviewText">
+  <p>"I've been visiting the eye doctor and using corrective lenses for over 23 years. I have a great deal of experience with various doctors-a lot of good ones. However, my visit to We Care for Eyes was exceptional. Dr. Monique Mezei is amazing with a great staff and environment. No hassles. Professional and knowledgeable. Extremely polite. Great follow-up. Caters to your every..."</p>
+  </div>
+  </div>
+<!--This is the center review on the homepage-->
+  <div class="containerMiddle">
+  <div class="reviewPicture">
+    <!--Review image-->
+    <p style="margin-right:10px"><img src="https://images.squarespace-cdn.com/content/v1/58bb2cb186e6c0c5a701f40c/1559088901341-I8T7FEMKTG6N047PD8EF/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/DBP_0128.jpg?format=2500w"
+    width=65 top=10>     Sundesh L.</p>
+  </div>
+  <div class="reviewText">
+  <p>"The doctor here is amazingly friendly, generous, and down-to-earth. This doctor was able to connect with me in order to fix some of my flaws with contact use. Although, the building is hard to find and seemingly sketchy, overall my visit here was incredible. Highly recommend."</p>
+  </div>
+  </div>
+
+<!--This is the right-most review on the homepage-->
+  <div class="containerRight">
+  <div class="reviewPicture">
+    <!--Review image-->
+    <p style="margin-right:10px"><img src="https://static1.squarespace.com/static/549dd0cee4b029881efa814b/5b101ad2758d46ee70365c19/5b101ad62b6a2888d277765c/1543878073836/dc-headshot-photographer-97.JPG"
+    width=50 top=10>     Jade B.</p>
+  </div>
+  <div class="reviewText">
+  <p>"I scored a pretty good deal with We Care for Eyes via Groupon, but I would gladly go back and pay full price. From the friendly receptionist to the kind lady that presents you with contact and glasses options, the customer service here was impeccable. Additionally, the doctor was so sweet and thorough during the exam. I'll definitely be back, and I would reccommend this place..."</p>
+  </div>
+  </div>
+<h1 style="opacity:0">test</h1>
+</div>
+<div class="w3-container w3-teal">
+  <div class="about" id="aboutus">
+    <a name="#about"></a><h1>About Us</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent posuere ligula pulvinar tortor convallis, eget tempus dui pellentesque. Sed aliquet eros vitae risus gravida eleifend. Etiam sit amet ultrices justo, eget gravida lacus. Aenean ultricies fermentum rutrum. Duis aliquam dui sit amet leo elementum feugiat. Nulla vitae faucibus orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada erat turpis, interdum accumsan justo pharetra sed. Etiam tincidunt est risus, at venenatis velit condimentum et. Vivamus eget rutrum justo.</p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img src="https://wecareforeyes.vpweb.com/0.14_0.05_0.02_0.11_315_237_csupload_70030704.jpg?u=1229576818"
+      style="width:100%">
+    </div>
+    <div class="column">
+      <img src="https://wecareforeyes.vpweb.com/0.18_0.1_0.08_0.16_258_194_csupload_70030707.jpg?u=2788923858"
+      style="width:100%">
+    </div>
+  </div>
+</div>
+
+<div class="service-container" id="services">
+<div class="background-services">
+  <a name="services"></a><h1 style="text-align:center">Our Services</h1>
+  <div class="row">
+    <div class="column-2">
+      <img src="https://cdn.pixabay.com/photo/2014/04/03/10/27/eyeglasses-310516_640.png" style="width:100%">
+  </div>
+    <div class="column-2">
+      <div class="eye-resize">
+      <img src="https://www.amswebdesign.com/wp-content/uploads/2015/07/eye.png" style="width:100%">
+    </div>
+  </div>
+   <div class="column-2">
+     <div class="exam-resize">
+    <img src="https://lh3.googleusercontent.com/LSVCaKI3dYiNomNU1TKaYPXeD8xhdwArKn6QQpZhbklambHiz-keIG10UCVPuX2RBd_MYizyCFeIMtg0NAbzaaULlMcl0QGeEf0gc6qednS8FItGYTIw1ZqbkSOrWdU-APM9BOPBxzmGtlAK5rAffjoM2UAzE_xCCkWRmEq0NFJwU3f6jR2Qx17phv24-ep4njmFtSKwOU3TKJn7aKWdt6C0vaumrEwpEPJeoXVDWcEH5chN8qDZok4UdebSHlWR03SwEhbZWkRnCASW3W5sigzAk-W404ykiwxl8vOwF6ImxoYx0mWqPEONdFNe355-fJcSKOONLPaCFixzBCENc9jbxEqhuiHq0FiFm5BL6SdyBdtKD6emtHYbg1N7gU2-_MhOH2w5ILIuK-E8gIAHGGFRurzjFFBVtsftsrIoFwlyJU_u5waeJs80R7k6K-usBjyXgQslQDEBeyrhEKZ8rN5Do7vGFWJKKMMvYMvQEhZUpC0emxkIKY7bXlu2Ts5xvNWytoTpiCzz1NOFSw0I_ZpQqtAxkTy-VPgjvq3WKgd1Z445zNuQXq8yJiZHFP5MaB8p_4x4GtcGgWsTZM779Bl8oIezoidz0poDp9vQYrhz6GRVDm6E-VwWhEjTl_KyzfIspUvtPxYMQqS4aLqJGsbw_x9g_fo=w92-h100-no" style="width:100%">
+    </div>
+   </div>
+   <div class="column-2">
+     <div class="exam-resize">
+    <img src="http://simpleicon.com/wp-content/uploads/eyedropper.png" style="width:100%">
+    </div>
+   </div>
+  </div>
+  <div class="service-text">
+    <p>Glasses</p>
+    <div class="service-text2">
+    <p>Contact lenses</p>
+  </div>
+  <div class="service-text3">
+  <p>Eye Exams</p>
+  </div>
+  <div class="service-text4">
+  <p>Treatment</p>
+  </div>
+  </div>
+
+  <div class="service-text-list">
+    <div class="service-list-element">
+     <p>Designer Products -</p>
+   </div>
+   <div class="service-list-element">
+     <p>Contact lens fitting and training -</p>
+   </div>
+   <div class="service-list-element">
+    <p>Athletic screenings -</p>
+  </div>
+  <div class="service-list-element">
+    <p>Dry eye -</p>
+  </div>
+  <div class="service-list-element">
+   <p>Glaucoma -</p>
+ </div>
+ <div class="service-list-element">
+   <p>Hypertension -</p>
+  </div>
+  <div class="service-list-element">
+   <p>Diabetes</p>
+ </div>
+ <div class="service-list-element">
+   <p>Headaches -</p>
+ </div>
+ <div class="service-list-element">
+  <p>Blurry Vision -</p>
+</div>
+<div class="service-list-element">
+  <p>Double Vision -</p>
+</div>
+<div class="service-list-element">
+ <p>Macular Degeneration -</p>
+</div>
+<div class="service-list-element">
+ <p>Amblyopia -</p>
+</div>
+<div class="service-list-element">
+ <p>Strabismus</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-container w3-dark-gray" id="locations">
+  <h1 style="text-align:center">Locations</h1>
+  <div class="location-text-container">
+    <p style="margin-left: 265px">Queens Location</p>
+    <p style="margin-left:260px">Long Island Location</p>
+  </div>
+  <div class="map-container">
+    <div class="map1">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.435632611075!2d-73.85957838483912!3d40.730438879329924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25e311aaa06c5%3A0x69496bba35de7eb5!2s98-10+64th+Ave+%231B%2C+Rego+Park%2C+NY+11374!5e0!3m2!1sen!2sus!4v1561078966274!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+    <div class="map2">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.8135598228996!2d-73.41845408459278!3d40.788112779323676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e82bd4ebde3dc1%3A0x4487c378a22c2691!2s150+Broadhollow+Rd+%23108%2C+Melville%2C+NY+11747!5e0!3m2!1sen!2sus!4v1561079659418!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="office-hour-container">
+
+  <div class="hours-container1">
+    <p style="text-align:center"><font size=5><u>Queens Office Hours</u></font></p>
+    <p>Monday: 11:00am - 7:00pm</p>
+    <p>Tuesday: Pick-Ups Only 12:00pm - 4:00pm</p>
+    <p>Wednesday: 10:00am - 6:00pm</p>
+    <p>Thursday: 11:00am - 7:00pm</p>
+    <p>Friday: 10:00am - 4:00pm</p>
+    <p>Saturday: 10:00am - 4:00pm</p>
+    <p>Sunday: Closed</p>
+  </div>
+
+  <div class="hours-container2">
+    <p style="text-align:center"><font size=5><u>Long Island Office Hours</u></font></p>
+    <p>Monday: 11:00am - 7:00pm</p>
+    <p>Tuesday: Pick-Ups Only 12:00pm - 4:00pm</p>
+    <p>Wednesday: 10:00am - 6:00pm</p>
+    <p>Thursday: 11:00am - 7:00pm</p>
+    <p>Friday: 10:00am - 4:00pm</p>
+    <p>Saturday: 10:00am - 4:00pm</p>
+    <p>Sunday: Closed</p>
+  </div>
+
+
+</div>
+</div>
+
+<div class="w3-container w3-gray" id="contact">
+  <h1 style="text-align:center"><font color="white">Contact Us</font></h1>
+  <div class="contact-us-container">
+    <div class="queens-container">
+      <h2>Queens</h2>
+      <p>Phone: 1(718) 896-1942</p>
+      <p>Fax: 1(718) 896-2089</p>
+      <p><a href="mailto:wecareforeyes@aol.com?">wecareforeyes@aol.com</a></p>
+    </div>
+    <div class="long-island-container">
+      <h2>Long Island</h2>
+      <p>Phone: 1(631) 923-2729</p>
+      <p>Fax: 1(631) 923-2730</p>
+      <p><a href="mailto:wecareforeyes@aol.com?">wecareforeyes@aol.com</a></p>
+    </div>
+  </div>
+  <div class="social-media-container">
+  <h1 style="text-align:center"><b><font color="white">Stay Connected</font></b></h1>
+  <a href="https://www.facebook.com/WeCareForEyes" class="fa fa-facebook" target="_blank"></a>
+</div>
+</div>
+
+
+
+
+<!--End of website-->
+</div>
