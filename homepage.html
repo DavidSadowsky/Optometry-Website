@@ -50,7 +50,7 @@
   	border-spacing: 0;
   }
 .website {
-  width: 1183px;
+  min-width: 1183px;
 }
 .topnav {
   overflow: hidden;
@@ -75,15 +75,15 @@
   padding: 0px 10px;
   text-decoration: none;
 }
-div.background {
-  background: url(https://papers.co/desktop/wp-content/uploads/papers.co-mu53-tree-wood-mountain-nature-dark-green-29-wallpaper.jpg);
+.background {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9) ), url('https://wallpaperplay.com/walls/full/8/8/d/195929.jpg');
   top: 50;
   bottom: 50;
+  width: 100%;
   overflow: auto;
 }
 .home {
   text-align: center;
-  float: center;
   color: white;
   padding: 10px;
 }
@@ -107,8 +107,7 @@ div.background {
   height: 275px;
   color: white;
   background: rgba(254, 254,254, 0.2);
-  margin-left: 20px;
-  margin-right: 150px;
+  margin-right: 5%;
   float: left;
 }
 .reviewPicture {
@@ -125,7 +124,6 @@ div.background {
   height: 275px;
   color: white;
   background: rgba(254, 254,254, 0.2);
-  margin-left: 150px;
   float: left;
 }
 
@@ -135,21 +133,42 @@ div.background {
   height: 275px;
   color: white;
   background: rgba(254, 254,254, 0.2);
-  margin-left: 20px;
   float: left;
   margin-bottom: 75px;
+  margin-right: 5%;
 }
 .column {
   float: left;
   width: 50%;
-  padding: 100px;
+  padding: 8%;
 }
 .column-2 {
   float: left;
   width: 12%;
-  margin-left: 100px;
   filter: invert(1);
-  margin-right: 50px;
+  margin-left: 8%;
+}
+.column-2a {
+  float: left;
+  width: 12%;
+  filter: invert(1);
+  margin-right: 10%;
+  margin-left: 13%;
+}
+.column-2b {
+  float: left;
+  width: 12%;
+  filter: invert(1);
+  margin-left: 3%;
+}
+.column-2c {
+  float: left;
+  width: 12%;
+  filter: invert(1);
+  margin-left: 12.6%;
+}
+.glasses-resize {
+  width: 150px;
 }
 .exam-resize {
   width: 75px;
@@ -164,14 +183,22 @@ div.background {
   content: "";
   clear: both;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
 }
-div.background-services {
+.row2::after {
+  width: 100%;
+  content: "";
+  clear: both;
+  display: flex;
+  justify-content: center;
+}
+.background-services {
   top: 50;
   bottom: 50;
   overflow: auto;
   color:white;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9) ), url('http://www.clearchoice4eyecare.com/files/2016/02/concourse_optometry_background_Final2-1200x430.jpg');
+  padding: 16px;
 }
 .service-container {
   width: 100%;
@@ -179,19 +206,19 @@ div.background-services {
 .service-text {
   display: flex;
   flex-direction: row;
-  margin-left: 152px;
+  margin-left: 12.5%;
   font-size: 10px;
 }
 .service-text2 {
-  margin-left: 220px;
+  margin-left: 21.75%;
   font-size: 10px;
 }
 .service-text3 {
-  margin-left: 202px;
+  margin-left: 19.4%;
   font-size: 10px;
 }
 .service-text4 {
-  margin-left: 250px;
+  margin-left: 24%;
   font-size: 10px;
 }
 .service-text-list {
@@ -211,32 +238,33 @@ div.background-services {
 .location-text-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   font-size: 20px;
 }
 .map-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
   margin-bottom: 50px;
 }
 .map1{
-  margin-left: 150px;
-  margin-right: 25px;
+  margin-right: 2%;
 }
 .map2 {
-  margin-right: 20px;
-  margin-left: 25px;
+  margin-left: 2%;
 }
 .contact-us-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   text-align: center;
   margin-bottom: 50px;
   color: white;
 }
 .queens-container {
   flex-direction: column;
-  margin-right: 400px;
-  margin-left: 150px
+  margin-right: 25%;
 }
 .long-island-container {
   flex-direction: column;
@@ -249,7 +277,6 @@ div.background-services {
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
-  margin-left: 550px;
   border-radius: 50%;
 }
 .fa:hover {
@@ -260,29 +287,41 @@ div.background-services {
   color: white;
 }
 .social-media-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .hours-container1 {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 50px;
-  margin-left: 165px;
+  width: 450px;
+  height: 250px;
 }
 .hours-container2 {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 50px;
-  margin-left: 140px;
+  width: 470px;
+  height: 50px;
+}
+.hours-container {
+  display: flex;
 }
 .office-hour-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 .profile-picture-container {
   height: 25px;
   width: 35px;
+}
+.reviews {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 img {
   border-radius: 8px;
@@ -348,6 +387,7 @@ $(document).ready(function(){
     <h2 style="font-size:20px">Caring For Eyes Since 1958</h2>
   </div>
 <!--This is the left-most review on the homepage-->
+<div class="reviews">
   <div class="container">
   <div class="reviewPicture">
     <!--Review image-->
@@ -381,6 +421,7 @@ $(document).ready(function(){
   <p>"I scored a pretty good deal with We Care for Eyes via Groupon, but I would gladly go back and pay full price. From the friendly receptionist to the kind lady that presents you with contact and glasses options, the customer service here was impeccable. Additionally, the doctor was so sweet and thorough during the exam. I'll definitely be back, and I would reccommend this place..."</p>
   </div>
   </div>
+</div>
 <h1 style="opacity:0">test</h1>
 </div>
 <div class="w3-container w3-teal">
@@ -404,37 +445,31 @@ $(document).ready(function(){
 <div class="service-container" id="services">
 <div class="background-services">
   <a name="services"></a><h1 style="text-align:center">Our Services</h1>
-  <div class="row">
+  <div class="row2">
     <div class="column-2">
+      <div class="glasses-resize">
       <img src="https://cdn.pixabay.com/photo/2014/04/03/10/27/eyeglasses-310516_640.png" style="width:100%">
+      <p style="text-align:center"><font size=1 color="black">Glasses</font></p>
+      </div>
   </div>
-    <div class="column-2">
+    <div class="column-2a">
       <div class="eye-resize">
       <img src="https://www.amswebdesign.com/wp-content/uploads/2015/07/eye.png" style="width:100%">
+      <p style="text-align:center"><font size=1 color="black">Contact Lenses</font></p>
     </div>
   </div>
-   <div class="column-2">
+   <div class="column-2b">
      <div class="exam-resize">
     <img src="https://lh3.googleusercontent.com/LSVCaKI3dYiNomNU1TKaYPXeD8xhdwArKn6QQpZhbklambHiz-keIG10UCVPuX2RBd_MYizyCFeIMtg0NAbzaaULlMcl0QGeEf0gc6qednS8FItGYTIw1ZqbkSOrWdU-APM9BOPBxzmGtlAK5rAffjoM2UAzE_xCCkWRmEq0NFJwU3f6jR2Qx17phv24-ep4njmFtSKwOU3TKJn7aKWdt6C0vaumrEwpEPJeoXVDWcEH5chN8qDZok4UdebSHlWR03SwEhbZWkRnCASW3W5sigzAk-W404ykiwxl8vOwF6ImxoYx0mWqPEONdFNe355-fJcSKOONLPaCFixzBCENc9jbxEqhuiHq0FiFm5BL6SdyBdtKD6emtHYbg1N7gU2-_MhOH2w5ILIuK-E8gIAHGGFRurzjFFBVtsftsrIoFwlyJU_u5waeJs80R7k6K-usBjyXgQslQDEBeyrhEKZ8rN5Do7vGFWJKKMMvYMvQEhZUpC0emxkIKY7bXlu2Ts5xvNWytoTpiCzz1NOFSw0I_ZpQqtAxkTy-VPgjvq3WKgd1Z445zNuQXq8yJiZHFP5MaB8p_4x4GtcGgWsTZM779Bl8oIezoidz0poDp9vQYrhz6GRVDm6E-VwWhEjTl_KyzfIspUvtPxYMQqS4aLqJGsbw_x9g_fo=w92-h100-no" style="width:100%">
+    <p style="text-align:left"><font size=1 color="black">Eye Exams</font></p>
     </div>
    </div>
-   <div class="column-2">
+   <div class="column-2c">
      <div class="exam-resize">
     <img src="http://simpleicon.com/wp-content/uploads/eyedropper.png" style="width:100%">
+    <p style="text-align:center"><font size=1 color="black">Treatment</font></p>
     </div>
    </div>
-  </div>
-  <div class="service-text">
-    <p>Glasses</p>
-    <div class="service-text2">
-    <p>Contact lenses</p>
-  </div>
-  <div class="service-text3">
-  <p>Eye Exams</p>
-  </div>
-  <div class="service-text4">
-  <p>Treatment</p>
-  </div>
   </div>
 
   <div class="service-text-list">
@@ -483,22 +518,22 @@ $(document).ready(function(){
 
 <div class="w3-container w3-dark-gray" id="locations">
   <h1 style="text-align:center">Locations</h1>
-  <div class="location-text-container">
-    <p style="margin-left: 265px">Queens Location</p>
-    <p style="margin-left:260px">Long Island Location</p>
-  </div>
   <div class="map-container">
     <div class="map1">
+      <p style="text-align:center"><font size=4.5>Queens Location</font></p>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.435632611075!2d-73.85957838483912!3d40.730438879329924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25e311aaa06c5%3A0x69496bba35de7eb5!2s98-10+64th+Ave+%231B%2C+Rego+Park%2C+NY+11374!5e0!3m2!1sen!2sus!4v1561078966274!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
     <div class="map2">
+      <p style="text-align:center"><font size=4.5>Long Island Location</font></p>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.8135598228996!2d-73.41845408459278!3d40.788112779323676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e82bd4ebde3dc1%3A0x4487c378a22c2691!2s150+Broadhollow+Rd+%23108%2C+Melville%2C+NY+11747!5e0!3m2!1sen!2sus!4v1561079659418!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </div>
-  <div class="office-hour-container">
 
+
+  <div class="office-hour-container">
+<div class="hours-container">
   <div class="hours-container1">
-    <p style="text-align:center"><font size=5><u>Queens Office Hours</u></font></p>
+    <p style="text-align:center"><font size=3><u>Queens Office Hours</u></font></p>
     <p>Monday: 11:00am - 7:00pm</p>
     <p>Tuesday: Pick-Ups Only 12:00pm - 4:00pm</p>
     <p>Wednesday: 10:00am - 6:00pm</p>
@@ -509,17 +544,18 @@ $(document).ready(function(){
   </div>
 
   <div class="hours-container2">
-    <p style="text-align:center"><font size=5><u>Long Island Office Hours</u></font></p>
-    <p>Monday: 11:00am - 7:00pm</p>
-    <p>Tuesday: Pick-Ups Only 12:00pm - 4:00pm</p>
-    <p>Wednesday: 10:00am - 6:00pm</p>
+    <p style="text-align:center"><font size=3><u>Long Island Office Hours</u></font></p>
+    <p>Monday: 1:00pm - 7:00pm</p>
+    <p>Tuesday: 4:00pm - 7:00pm</p>
+    <p>Wednesday: 12:00pm - 6:00pm</p>
     <p>Thursday: 11:00am - 7:00pm</p>
-    <p>Friday: 10:00am - 4:00pm</p>
-    <p>Saturday: 10:00am - 4:00pm</p>
+    <p>Friday: 11:00am - 5:00pm</p>
+    <p>Every Other Saturday: 10:00am - 4:00pm</p>
     <p>Sunday: Closed</p>
   </div>
 
 
+</div>
 </div>
 </div>
 
@@ -543,6 +579,7 @@ $(document).ready(function(){
   <h1 style="text-align:center"><b><font color="white">Stay Connected</font></b></h1>
   <a href="https://www.facebook.com/WeCareForEyes" class="fa fa-facebook" target="_blank"></a>
 </div>
+
 </div>
 
 
