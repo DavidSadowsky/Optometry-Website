@@ -55,6 +55,9 @@
 .topnav {
   overflow: hidden;
   background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .topnav a {
   float: right;
@@ -90,6 +93,7 @@
 .about {
   text-align: center;
   color: white;
+  margin-top: 50px;
 }
 .reviewBoxLeft {
   height: 200;
@@ -388,7 +392,7 @@ $(document).ready(function(){
   </div>
 <div class="background">
   <div class="home" id="home">
-  <h1>Eye Care Service in Queens and Long Island</h1>
+  <h1 style="margin-top:50px">Eye Care Service in Queens and Long Island</h1>
     <h2 style="font-size:20px">Caring For Eyes Since 1958</h2>
   </div>
 <!--This is the left-most review on the homepage-->
@@ -429,9 +433,9 @@ $(document).ready(function(){
 </div>
 <h1 style="opacity:0">test</h1>
 </div>
-<div class="w3-container w3-teal">
-  <div class="about" id="aboutus">
-    <a name="#about"></a><h1>About Us</h1>
+ <a name="#about"></a><div class="w3-container w3-teal"  id="aboutus">
+  <div class="about">
+  <h1 style="margin-top:50px">About Us</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent posuere ligula pulvinar tortor convallis, eget tempus dui pellentesque. Sed aliquet eros vitae risus gravida eleifend. Etiam sit amet ultrices justo, eget gravida lacus. Aenean ultricies fermentum rutrum. Duis aliquam dui sit amet leo elementum feugiat. Nulla vitae faucibus orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada erat turpis, interdum accumsan justo pharetra sed. Etiam tincidunt est risus, at venenatis velit condimentum et. Vivamus eget rutrum justo.</p>
   </div>
 
@@ -447,9 +451,9 @@ $(document).ready(function(){
   </div>
 </div>
 
-<div class="service-container" id="services">
-<div class="background-services">
-  <a name="services"></a><h1 style="text-align:center">Our Services</h1>
+<div class="service-container">
+<div class="background-services"  id="services">
+  <a name="services"></a><h1 style="text-align:center; margin-top:50px">Our Services</h1>
   <div class="row2">
     <div class="column-2">
       <div class="glasses-resize">
@@ -522,7 +526,7 @@ $(document).ready(function(){
 </div>
 
 <div class="w3-container w3-dark-gray" id="locations">
-  <h1 style="text-align:center">Locations</h1>
+  <h1 style="text-align:center; margin-top:50px">Locations</h1>
   <div class="map-container">
     <div class="map1">
       <p style="text-align:center"><font size=4.5>Queens Location</font></p>
